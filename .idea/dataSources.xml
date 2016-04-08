@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="3479489306">
-    <data-source source="LOCAL" name="Rails HU: development" uuid="011ce7b4-9d9f-4edf-b1df-28d3caa94ca9">
+  <component name="DataSourceManagerImpl" format="xml" hash="459027839">
+    <data-source source="LOCAL" name="Rails SCRABBLE: development" uuid="1b74be23-817a-401d-85f9-f7157d80349b">
       <driver-ref>sqlite.xerial</driver-ref>
       <synchronize>true</synchronize>
       <imported>true</imported>
       <remarks>$PROJECT_DIR$/config/database.yml</remarks>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:F:\RailsInstaller\HU\db\development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:F:\RailsInstaller\SCRABBLE\db\development.sqlite3</jdbc-url>
       <explain-plan-config>
         <provider>com.intellij.database.plan.ExplainPlanProvider.NullExplainPlanProvider</provider>
       </explain-plan-config>

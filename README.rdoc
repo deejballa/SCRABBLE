@@ -1,28 +1,19 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is an application that will take in a set of characters and will iterate through a dictionary to produce all possible
+words that can be produced with those charachters.
 
-Things you may want to cover:
+HOW TO USE THE APPLICATION
+    In the top right corner there is a button called Input Characters
+    From here a modal will pop up and allow you to put in the letters you want to and allow you to click the button Find Words
 
-* Ruby version
+    The desired result from this is that the application will iterate through the dictionary and pull out all possible words
+    that can be produced with the given character set and display it on the screen in a legible format.
 
-* System dependencies
+CURRENT BUGS
+    After I'm done iterating through the dictionary I have a set that I create and I try to expose it on the front end, but
+    it always comes in as nil.
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+QUESTIONS
+    I feel like I'm doing business logic in the wrong location and I should be capturing things in the wrong areas. Any
+    feedback on the appropriate location of where I should be putting my code would be appreciated
