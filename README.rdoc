@@ -10,10 +10,6 @@ HOW TO USE THE APPLICATION
     The desired result from this is that the application will iterate through the dictionary and pull out all possible words
     that can be produced with the given character set and display it on the screen in a legible format.
 
-CURRENT BUGS
-    After I'm done iterating through the dictionary I have a set that I create and I try to expose it on the front end, but
-    it always comes in as nil.
-
 QUESTIONS
     I feel like I'm doing business logic in the wrong location and I should be capturing things in the wrong areas. Any
     feedback on the appropriate location of where I should be putting my code would be appreciated
