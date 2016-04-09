@@ -1,0 +1,14 @@
+<h1>Welcome</h1>
+<div class="col-sm-12">
+  <% if !@result_set.nil? %>
+      <strong>Valid Words</strong>
+      <% @result_set.each do |result| %>
+      <div>
+        <%= result %>
+      </div>
+    <% end %>
+  <% else %>
+    <div><strong>Please click Input Characters in the top right</strong></div>
+  <% end %>
+</div>
+
