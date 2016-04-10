@@ -7,13 +7,20 @@
       </div>
       <form class="form-horizontal" action="/result" method="get">
         <div class="modal-body">
-            <div class="form-group">
-              <label for="character" class="col-sm-2 control-label">Scrabble Letters</label>
-              <div class="col-sm-6">
-                <input type="text" class="form-control" id="character" name="character" placeholder="Scrabble Tiles" required>
-              </div>
-              <div class="col-sm-4"><h6>All special characters and numbers will be removed</h6></div>
+          <div class="form-group">
+            <label for="character" class="col-sm-2 control-label">Possible Words</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="character" name="character" placeholder="Find all possibilities">
             </div>
+            <div class="col-sm-4"><h6>All special characters and numbers will be removed</h6></div>
+          </div>
+          <div class="form-group">
+            <label for="character_exact" class="col-sm-2 control-label">Use all Letters</label>
+            <div class="col-sm-6">
+              <input type="text" class="form-control" id="character_exact" name="character_exact" placeholder="Find a word that uses all letters">
+            </div>
+            <div class="col-sm-4"><h6>All special characters and numbers will be removed</h6></div>
+          </div>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
