@@ -14,22 +14,26 @@ class Words < ActiveRecord::Base
         tmp_characters = characters.downcase
         ma = ma.downcase
         is_valid_word = true
-        ma.each_char { |m|
-          if tmp_characters.include?(m)
-            #remove items from tmp_character
-            tmp_characters = tmp_characters.sub(/#{m}/, '')
-          else
-            is_valid_word = false
-            break
-          end
-        }
-        if is_valid_word
-          if is_exact
-            if ma.length == characters.length
+
+        #Only go through the list if the user provided characters
+        if tmp_characters.present?
+          ma.each_char { |m|
+            if tmp_characters.include?(m)
+              #remove items from tmp_character
+              tmp_characters = tmp_characters.sub(/#{m}/, '')
+            else
+              is_valid_word = false
+              break
+            end
+          }
+          if is_valid_word
+            if is_exact
+              if ma.length == characters.length
+                result_set.add(ma)
+              end
+            else
               result_set.add(ma)
             end
-          else
-            result_set.add(ma)
           end
         end
       }
